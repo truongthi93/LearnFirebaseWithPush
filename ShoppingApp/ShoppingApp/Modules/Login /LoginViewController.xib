@@ -134,7 +134,20 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egm-lx-Kbh">
                             <rect key="frame" x="0.0" y="388" width="375" height="129.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w4-ts-ekJ">
+                                    <rect key="frame" x="122.5" y="50" width="130" height="30"/>
+                                    <state key="normal" title="Text recognization "/>
+                                    <connections>
+                                        <action selector="imageRecognizing:" destination="-1" eventType="touchUpInside" id="VSM-W6-twS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="4w4-ts-ekJ" firstAttribute="centerX" secondItem="egm-lx-Kbh" secondAttribute="centerX" id="37z-P6-oPw"/>
+                                <constraint firstItem="4w4-ts-ekJ" firstAttribute="centerY" secondItem="egm-lx-Kbh" secondAttribute="centerY" id="A8M-Hu-b7N"/>
+                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-78-Q1l">
                             <rect key="frame" x="0.0" y="517.5" width="375" height="129.5"/>

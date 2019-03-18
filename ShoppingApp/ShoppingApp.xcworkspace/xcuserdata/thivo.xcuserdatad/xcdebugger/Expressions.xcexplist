@@ -3,10 +3,37 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in FireStoreHomeViewController.getTrendKeywordListUsingFireStore():FireStoreHomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "document.data()">
+            </PersistentString>
+            <PersistentString
+               value = "document.documentID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in HomeViewController.viewWillAppear(_:):HomeViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "user.displayName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.userNotificationCenter(_:willPresent:withCompletionHandler:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "notification">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.sign(inWillDispatch:error:):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "signIn.currentUser.userID">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -22,10 +49,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginViewController.sign(inWillDispatch:error:):LoginViewController.swift">
+         contextName = "CameraController.captureImage(completion:):CameraController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "signIn.currentUser.userID">
+               value = "captureSession.isRunning">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -37,25 +64,6 @@
             </PersistentString>
             <PersistentString
                value = "userId">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "AppDelegate.userNotificationCenter(_:willPresent:withCompletionHandler:):AppDelegate.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "notification">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in FireStoreHomeViewController.getTrendKeywordListUsingFireStore():FireStoreHomeViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "document.data()">
-            </PersistentString>
-            <PersistentString
-               value = "document.documentID">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

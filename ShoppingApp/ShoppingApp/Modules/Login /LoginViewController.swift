@@ -99,4 +99,12 @@ class LoginViewController: BaseViewController, GIDSignInUIDelegate, FBSDKLoginBu
         print("Log out")
     }
 
+    @IBAction func imageRecognizing(_ sender: Any) {
+        let nav = UINavigationController()
+        let homeViewController = RecognizingViewController()
+        nav.viewControllers = [homeViewController]
+        self.present(nav, animated: true, completion: {
+            print("move to main")
+        })
+    }
 }

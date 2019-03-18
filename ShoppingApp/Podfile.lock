@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (5.1.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.3)
+  - BHPhotoView (0.12.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -39,6 +40,12 @@ PODS:
   - Firebase/Messaging (5.15.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (= 3.2.2)
+  - Firebase/MLVision (5.15.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (= 0.13.0)
+  - Firebase/MLVisionTextModel (5.15.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionTextModel (= 0.13.0)
   - Firebase/Performance (5.15.0):
     - Firebase/Core
     - FirebasePerformance (= 2.2.2)
@@ -96,6 +103,16 @@ PODS:
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/Reachability (~> 5.2)
     - Protobuf (~> 3.1)
+  - FirebaseMLCommon (0.13.0):
+    - FirebaseCore (~> 5.1)
+  - FirebaseMLVision (0.13.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseMLCommon (~> 0.13)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleMobileVision/Detector (~> 1.4)
+  - FirebaseMLVisionTextModel (0.13.0):
+    - GoogleMobileVision/TextDetector (~> 1.4)
   - FirebasePerformance (2.2.2):
     - FirebaseAnalytics (~> 5.4)
     - FirebaseInstanceID (~> 3.3)
@@ -118,12 +135,24 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.1)
     - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleAPIClientForREST/Core (1.3.7):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.3.7):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
   - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
+  - GoogleMobileVision/Detector (1.5.0):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.1)
+  - GoogleMobileVision/TextDetector (1.5.0):
+    - GoogleMobileVision/Detector (~> 1.5)
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -175,7 +204,11 @@ PODS:
     - gRPC-Core/Interface (= 1.14.0)
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.14.0)
+  - GTMSessionFetcher (1.2.1):
+    - GTMSessionFetcher/Full (= 1.2.1)
   - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Full (1.2.1):
+    - GTMSessionFetcher/Core (= 1.2.1)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -189,6 +222,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
+  - BHPhotoView (from `https://github.com/benhurott/BHPhotoView`)
   - Crashlytics (~> 3.12.0)
   - Fabric (~> 1.9.0)
   - FBSDKLoginKit
@@ -197,6 +231,8 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Firestore
   - Firebase/Messaging
+  - Firebase/MLVision
+  - Firebase/MLVisionTextModel
   - Firebase/Performance
   - Firebase/Storage
   - GoogleSignIn
@@ -224,10 +260,15 @@ SPEC REPOS:
     - FirebaseFirestore
     - FirebaseInstanceID
     - FirebaseMessaging
+    - FirebaseMLCommon
+    - FirebaseMLVision
+    - FirebaseMLVisionTextModel
     - FirebasePerformance
     - FirebaseRemoteConfig
     - FirebaseStorage
+    - GoogleAPIClientForREST
     - GoogleAppMeasurement
+    - GoogleMobileVision
     - GoogleSignIn
     - GoogleToolboxForMac
     - GoogleUtilities
@@ -240,9 +281,19 @@ SPEC REPOS:
     - Protobuf
     - SVProgressHUD
 
+EXTERNAL SOURCES:
+  BHPhotoView:
+    :git: https://github.com/benhurott/BHPhotoView
+
+CHECKOUT OPTIONS:
+  BHPhotoView:
+    :commit: cb039872b093331ef046e9a52bd4f32cf5f70383
+    :git: https://github.com/benhurott/BHPhotoView
+
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
+  BHPhotoView: dbcfb4496ce3e78ba5df4ffc131e88d02a34bf38
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
@@ -260,10 +311,15 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 58043a1c2d2c91efdaa8d8f385cdbaa2ce750cfe
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FirebaseMessaging: b412996f6a09337d232bb3a6676ce4d1f353d024
+  FirebaseMLCommon: 5e1bc4c4aa1d12c1f6bc38b40d2d60e8e63466bb
+  FirebaseMLVision: eba288c56228b25d9be498861ad0b9f305e8ce5c
+  FirebaseMLVisionTextModel: abb5bc051ea1c286bfe04a0347ce25237d1df0aa
   FirebasePerformance: 6f77b930f982a54ad487d3de5523ce641db9dcc9
   FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
   FirebaseStorage: 3d22c041370593e639fba013d1eb698a8dae2881
+  GoogleAPIClientForREST: 825503f12cb5824601cf526cf06d81a1cea4afd9
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
+  GoogleMobileVision: a1f93108b3527d67339e2de80e1db76645f9e8b9
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
@@ -276,6 +332,6 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 015d6ed1d944ec8a19441e675d2f86df5ad4a302
+PODFILE CHECKSUM: d9ecbdf3dd3f3b9ea2e70cf0d31931d96bab902c
 
 COCOAPODS: 1.5.3

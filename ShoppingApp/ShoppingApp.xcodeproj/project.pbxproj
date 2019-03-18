@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4EF1F0052238EFC500DCFC06 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1F0042238EFC500DCFC06 /* UIDeviceExtension.swift */; };
+		B92FD5E3223FA79100F2623D /* TakeCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92FD5E1223FA79100F2623D /* TakeCameraViewController.swift */; };
+		B92FD5E4223FA79100F2623D /* TakeCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92FD5E2223FA79100F2623D /* TakeCameraViewController.xib */; };
 		B93FEB74223B870B00EEEA9D /* FireStoreHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93FEB72223B870B00EEEA9D /* FireStoreHomeViewController.swift */; };
 		B93FEB75223B870B00EEEA9D /* FireStoreHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93FEB73223B870B00EEEA9D /* FireStoreHomeViewController.xib */; };
 		B93FEB78223B91FA00EEEA9D /* Codeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93FEB77223B91FA00EEEA9D /* Codeable.swift */; };
@@ -28,6 +30,8 @@
 		B98F9B772227D5DC005524C2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F9B762227D5DC005524C2 /* Utilities.swift */; };
 		B98F9B792227D840005524C2 /* HomeViewController + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F9B782227D840005524C2 /* HomeViewController + CollectionView.swift */; };
 		B98F9B7B2227E7AA005524C2 /* Keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F9B7A2227E7AA005524C2 /* Keywords.swift */; };
+		B9944A27223F8FE100F74B12 /* RecognizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9944A25223F8FE100F74B12 /* RecognizingViewController.swift */; };
+		B9944A28223F8FE100F74B12 /* RecognizingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9944A26223F8FE100F74B12 /* RecognizingViewController.xib */; };
 		B994F06B22280B700062D4D9 /* TrendKeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B994F06922280B700062D4D9 /* TrendKeywordCollectionViewCell.swift */; };
 		B994F06C22280B700062D4D9 /* TrendKeywordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B994F06A22280B700062D4D9 /* TrendKeywordCollectionViewCell.xib */; };
 		B994F06E22281EB60062D4D9 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B994F06D22281EB60062D4D9 /* NumberExtensions.swift */; };
@@ -43,6 +47,8 @@
 		4EF1F0042238EFC500DCFC06 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		674B576CB6BBA286578602B8 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		839124EC7DDA82CE3364E24D /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
+		B92FD5E1223FA79100F2623D /* TakeCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeCameraViewController.swift; sourceTree = "<group>"; };
+		B92FD5E2223FA79100F2623D /* TakeCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeCameraViewController.xib; sourceTree = "<group>"; };
 		B93FEB72223B870B00EEEA9D /* FireStoreHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreHomeViewController.swift; sourceTree = "<group>"; };
 		B93FEB73223B870B00EEEA9D /* FireStoreHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FireStoreHomeViewController.xib; sourceTree = "<group>"; };
 		B93FEB77223B91FA00EEEA9D /* Codeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codeable.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 		B98F9B762227D5DC005524C2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B98F9B782227D840005524C2 /* HomeViewController + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + CollectionView.swift"; sourceTree = "<group>"; };
 		B98F9B7A2227E7AA005524C2 /* Keywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keywords.swift; sourceTree = "<group>"; };
+		B9944A25223F8FE100F74B12 /* RecognizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizingViewController.swift; sourceTree = "<group>"; };
+		B9944A26223F8FE100F74B12 /* RecognizingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognizingViewController.xib; sourceTree = "<group>"; };
 		B994F06922280B700062D4D9 /* TrendKeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendKeywordCollectionViewCell.swift; sourceTree = "<group>"; };
 		B994F06A22280B700062D4D9 /* TrendKeywordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendKeywordCollectionViewCell.xib; sourceTree = "<group>"; };
 		B994F06D22281EB60062D4D9 /* NumberExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtensions.swift; sourceTree = "<group>"; };
@@ -104,6 +112,15 @@
 				674B576CB6BBA286578602B8 /* Pods_ShoppingApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B92FD5DA223FA20F00F2623D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B92FD5E1223FA79100F2623D /* TakeCameraViewController.swift */,
+				B92FD5E2223FA79100F2623D /* TakeCameraViewController.xib */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		B93FEB76223B874400EEEA9D /* FireStoreHome */ = {
@@ -178,6 +195,7 @@
 		B98F9B5B2227C18B005524C2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B9944A24223F8FB600F74B12 /* Recognizing */,
 				B93FEB76223B874400EEEA9D /* FireStoreHome */,
 				B9DF0CD2223A12E20086E625 /* Login  */,
 				B9C8714022311B7600460C83 /* NewProduct */,
@@ -230,6 +248,16 @@
 				B98F9B782227D840005524C2 /* HomeViewController + CollectionView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B9944A24223F8FB600F74B12 /* Recognizing */ = {
+			isa = PBXGroup;
+			children = (
+				B92FD5DA223FA20F00F2623D /* Camera */,
+				B9944A25223F8FE100F74B12 /* RecognizingViewController.swift */,
+				B9944A26223F8FE100F74B12 /* RecognizingViewController.xib */,
+			);
+			path = Recognizing;
 			sourceTree = "<group>";
 		};
 		B994F06722280B280062D4D9 /* TrendKeywordCollectionViewCell */ = {
@@ -297,10 +325,10 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -331,10 +359,12 @@
 			files = (
 				B9DF0CD6223A12F60086E625 /* LoginViewController.xib in Resources */,
 				B994F06C22280B700062D4D9 /* TrendKeywordCollectionViewCell.xib in Resources */,
+				B92FD5E4223FA79100F2623D /* TakeCameraViewController.xib in Resources */,
 				B98F9B512227BDA3005524C2 /* LaunchScreen.storyboard in Resources */,
 				B98F9B752227C77B005524C2 /* Default-568h@2x.png in Resources */,
 				B98F9B4E2227BDA3005524C2 /* Assets.xcassets in Resources */,
 				B98F9B712227C507005524C2 /* HomeViewController.xib in Resources */,
+				B9944A28223F8FE100F74B12 /* RecognizingViewController.xib in Resources */,
 				B93FEB75223B870B00EEEA9D /* FireStoreHomeViewController.xib in Resources */,
 				B9C8713F22310FBB00460C83 /* GoogleService-Info.plist in Resources */,
 				B9C8714422311B9300460C83 /* NewProductViewController.xib in Resources */,
@@ -355,11 +385,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/BHPhotoView/BHPhotoView.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -376,11 +408,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BHPhotoView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -423,6 +457,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -430,6 +465,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +522,8 @@
 				B98F9B652227C31B005524C2 /* ColorExtension.swift in Sources */,
 				B98F9B6C2227C4B0005524C2 /* Constants.swift in Sources */,
 				4EF1F0052238EFC500DCFC06 /* UIDeviceExtension.swift in Sources */,
+				B92FD5E3223FA79100F2623D /* TakeCameraViewController.swift in Sources */,
+				B9944A27223F8FE100F74B12 /* RecognizingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +662,6 @@
 			baseConfigurationReference = CC4FA8DC1B33CCE207D2BBD1 /* Pods-ShoppingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ShoppingApp/ShoppingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -634,9 +671,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dc11.push.inapp;
+				PRODUCT_BUNDLE_IDENTIFIER = thi.uit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = DC11_PushNotification_Profile;
+				PROVISIONING_PROFILE_SPECIFIER = dc11AnhTran;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,7 +684,6 @@
 			baseConfigurationReference = 839124EC7DDA82CE3364E24D /* Pods-ShoppingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ShoppingApp/ShoppingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S64Q3RXYM7;
@@ -656,9 +692,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dc11.push.inapp;
+				PRODUCT_BUNDLE_IDENTIFIER = thi.uit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = DC11_PushNotification_Profile;
+				PROVISIONING_PROFILE_SPECIFIER = dc11AnhTran;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

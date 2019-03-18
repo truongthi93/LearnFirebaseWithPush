@@ -19,6 +19,9 @@ target 'ShoppingApp' do
   pod 'Crashlytics', '~> 3.12.0'
   pod 'Firebase/Performance'
   pod 'Firebase/Messaging'
+  pod 'Firebase/MLVisionTextModel'
+  pod 'Firebase/MLVision'
+  pod 'BHPhotoView', :git => 'https://github.com/benhurott/BHPhotoView'
 
 
   # Pods for ShoppingApp
