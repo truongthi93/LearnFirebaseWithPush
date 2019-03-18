@@ -6,21 +6,14 @@
 //  Copyright © 2019 ThiVo. All rights reserved.
 //
 import UIKit
-import FirebaseDatabase //tried not having this line, still the same
-import FirebaseStorage //tried not having this line, still the same
-import FirebaseFirestore
 
 class BaseViewController: UIViewController {
     var darkMode = false
-    var databaseRef: DatabaseReference!
-    var storageRef: StorageReference!
-    var fireStore: Firestore!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setNeedsStatusBarAppearanceUpdate()
         setUpNavigationColor()
-        configureDatabase()
         // Do any additional setup after loading the view.
     }
     
@@ -28,13 +21,6 @@ class BaseViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    func configureDatabase() {
-        //Gets a FIRDatabaseReference for the root of your Firebase Database.
-        databaseRef = Database.database().reference()
-        storageRef = Storage.storage().reference()
-        fireStore = Firestore.firestore()
-
-    }
 
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return darkMode ? .default : .lightContent

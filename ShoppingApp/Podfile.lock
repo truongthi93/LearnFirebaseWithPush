@@ -1,28 +1,5 @@
 PODS:
-  - Alamofire (4.8.0)
-  - AlamofireObjectMapper (5.1.0):
-    - Alamofire (~> 4.1)
-    - ObjectMapper (~> 3.3)
   - BHPhotoView (0.12.3)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - BoringSSL (10.0.6):
-    - BoringSSL/Implementation (= 10.0.6)
-    - BoringSSL/Interface (= 10.0.6)
-  - BoringSSL/Implementation (10.0.6):
-    - BoringSSL/Interface (= 10.0.6)
-  - BoringSSL/Interface (10.0.6)
-  - Crashlytics (3.12.0):
-    - Fabric (~> 1.9.0)
-  - Fabric (1.9.0)
-  - FBSDKCoreKit (4.39.0):
-    - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.39.0):
-    - FBSDKCoreKit
   - Firebase/Auth (5.15.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.2.0)
@@ -31,30 +8,18 @@ PODS:
     - FirebaseAnalytics (= 5.4.0)
   - Firebase/CoreOnly (5.15.0):
     - FirebaseCore (= 5.1.10)
-  - Firebase/Database (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseDatabase (= 5.0.4)
-  - Firebase/Firestore (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseFirestore (= 0.16.1)
   - Firebase/Messaging (5.15.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (= 3.2.2)
   - Firebase/MLVision (5.15.0):
     - Firebase/CoreOnly
     - FirebaseMLVision (= 0.13.0)
+  - Firebase/MLVisionFaceModel (5.15.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionFaceModel (= 0.13.0)
   - Firebase/MLVisionTextModel (5.15.0):
     - Firebase/CoreOnly
     - FirebaseMLVisionTextModel (= 0.13.0)
-  - Firebase/Performance (5.15.0):
-    - Firebase/Core
-    - FirebasePerformance (= 2.2.2)
-  - Firebase/Storage (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseStorage (= 3.0.3)
-  - FirebaseABTesting (2.0.0):
-    - FirebaseCore (~> 5.0)
-    - Protobuf (~> 3.5)
   - FirebaseAnalytics (5.4.0):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.3)
@@ -73,25 +38,6 @@ PODS:
   - FirebaseAuthInterop (1.0.0)
   - FirebaseCore (5.1.10):
     - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseDatabase (5.0.4):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.1)
-    - leveldb-library (~> 1.18)
-  - FirebaseFirestore (0.16.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.1)
-    - FirebaseFirestore/abseil-cpp (= 0.16.1)
-    - "gRPC-C++ (= 0.0.5)"
-    - leveldb-library (~> 1.20)
-    - nanopb (~> 0.3.8)
-    - Protobuf (~> 3.1)
-  - FirebaseFirestore/abseil-cpp (0.16.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.1)
-    - "gRPC-C++ (= 0.0.5)"
-    - leveldb-library (~> 1.20)
-    - nanopb (~> 0.3.8)
-    - Protobuf (~> 3.1)
   - FirebaseInstanceID (3.3.0):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
@@ -111,30 +57,10 @@ PODS:
     - GoogleAPIClientForREST/Core (~> 1.3)
     - GoogleAPIClientForREST/Vision (~> 1.3)
     - GoogleMobileVision/Detector (~> 1.4)
+  - FirebaseMLVisionFaceModel (0.13.0):
+    - GoogleMobileVision/FaceDetector (~> 1.4)
   - FirebaseMLVisionTextModel (0.13.0):
     - GoogleMobileVision/TextDetector (~> 1.4)
-  - FirebasePerformance (2.2.2):
-    - FirebaseAnalytics (~> 5.4)
-    - FirebaseInstanceID (~> 3.3)
-    - FirebaseRemoteConfig (~> 3.1)
-    - GoogleToolboxForMac/Logger (~> 2.1)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GoogleUtilities/ISASwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.5)
-  - FirebaseRemoteConfig (3.1.0):
-    - FirebaseABTesting (~> 2.0)
-    - FirebaseAnalytics (~> 5.3)
-    - FirebaseCore (~> 5.1)
-    - FirebaseInstanceID (~> 3.3)
-    - GoogleUtilities/Environment (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - Protobuf (~> 3.5)
-  - FirebaseStorage (3.0.3):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.1)
-    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAPIClientForREST/Core (1.3.7):
     - GTMSessionFetcher (>= 1.1.7)
   - GoogleAPIClientForREST/Vision (1.3.7):
@@ -151,30 +77,20 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.1)
+  - GoogleMobileVision/FaceDetector (1.5.0):
+    - GoogleMobileVision/Detector (~> 1.5)
   - GoogleMobileVision/TextDetector (1.5.0):
     - GoogleMobileVision/Detector (~> 1.5)
-  - GoogleSignIn (4.4.0):
-    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
-    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.2.0):
-    - GoogleToolboxForMac/Defines (= 2.2.0)
   - GoogleToolboxForMac/Defines (2.2.0)
   - GoogleToolboxForMac/Logger (2.2.0):
     - GoogleToolboxForMac/Defines (= 2.2.0)
   - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
     - GoogleToolboxForMac/Defines (= 2.2.0)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
-    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
-    - GoogleToolboxForMac/Defines (= 2.2.0)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GoogleUtilities/AppDelegateSwizzler (5.3.6):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
   - GoogleUtilities/Environment (5.3.6)
-  - GoogleUtilities/ISASwizzler (5.3.6)
   - GoogleUtilities/Logger (5.3.6):
     - GoogleUtilities/Environment
   - GoogleUtilities/MethodSwizzler (5.3.6):
@@ -188,98 +104,49 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.6):
     - GoogleUtilities/Logger
-  - "gRPC-C++ (0.0.5)":
-    - "gRPC-C++/Implementation (= 0.0.5)"
-    - "gRPC-C++/Interface (= 0.0.5)"
-  - "gRPC-C++/Implementation (0.0.5)":
-    - "gRPC-C++/Interface (= 0.0.5)"
-    - gRPC-Core (= 1.14.0)
-    - nanopb (~> 0.3)
-  - "gRPC-C++/Interface (0.0.5)"
-  - gRPC-Core (1.14.0):
-    - gRPC-Core/Implementation (= 1.14.0)
-    - gRPC-Core/Interface (= 1.14.0)
-  - gRPC-Core/Implementation (1.14.0):
-    - BoringSSL (~> 10.0)
-    - gRPC-Core/Interface (= 1.14.0)
-    - nanopb (~> 0.3)
-  - gRPC-Core/Interface (1.14.0)
   - GTMSessionFetcher (1.2.1):
     - GTMSessionFetcher/Full (= 1.2.1)
   - GTMSessionFetcher/Core (1.2.1)
   - GTMSessionFetcher/Full (1.2.1):
     - GTMSessionFetcher/Core (= 1.2.1)
-  - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - ObjectMapper (3.3.0)
   - Protobuf (3.6.1)
-  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireObjectMapper
   - BHPhotoView (from `https://github.com/benhurott/BHPhotoView`)
-  - Crashlytics (~> 3.12.0)
-  - Fabric (~> 1.9.0)
-  - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
-  - Firebase/Database
-  - Firebase/Firestore
   - Firebase/Messaging
   - Firebase/MLVision
+  - Firebase/MLVisionFaceModel
   - Firebase/MLVisionTextModel
-  - Firebase/Performance
-  - Firebase/Storage
-  - GoogleSignIn
-  - ObjectMapper (= 3.3)
-  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - AlamofireObjectMapper
-    - Bolts
-    - BoringSSL
-    - Crashlytics
-    - Fabric
-    - FBSDKCoreKit
-    - FBSDKLoginKit
     - Firebase
-    - FirebaseABTesting
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
-    - FirebaseDatabase
-    - FirebaseFirestore
     - FirebaseInstanceID
     - FirebaseMessaging
     - FirebaseMLCommon
     - FirebaseMLVision
+    - FirebaseMLVisionFaceModel
     - FirebaseMLVisionTextModel
-    - FirebasePerformance
-    - FirebaseRemoteConfig
-    - FirebaseStorage
     - GoogleAPIClientForREST
     - GoogleAppMeasurement
     - GoogleMobileVision
-    - GoogleSignIn
     - GoogleToolboxForMac
     - GoogleUtilities
-    - "gRPC-C++"
-    - gRPC-Core
     - GTMSessionFetcher
-    - leveldb-library
     - nanopb
-    - ObjectMapper
     - Protobuf
-    - SVProgressHUD
 
 EXTERNAL SOURCES:
   BHPhotoView:
@@ -291,47 +158,28 @@ CHECKOUT OPTIONS:
     :git: https://github.com/benhurott/BHPhotoView
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   BHPhotoView: dbcfb4496ce3e78ba5df4ffc131e88d02a34bf38
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
-  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
-  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
-  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
-  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
-  FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
   FirebaseAuth: 02e969ff430e156d99d4cb842d77b806b71ad7bb
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
-  FirebaseDatabase: 0621689f77528d62b47e1c06ca737c4c19275d1a
-  FirebaseFirestore: 58043a1c2d2c91efdaa8d8f385cdbaa2ce750cfe
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FirebaseMessaging: b412996f6a09337d232bb3a6676ce4d1f353d024
   FirebaseMLCommon: 5e1bc4c4aa1d12c1f6bc38b40d2d60e8e63466bb
   FirebaseMLVision: eba288c56228b25d9be498861ad0b9f305e8ce5c
+  FirebaseMLVisionFaceModel: 8656827cbf7c899a2da4567f8c42e31d243d3000
   FirebaseMLVisionTextModel: abb5bc051ea1c286bfe04a0347ce25237d1df0aa
-  FirebasePerformance: 6f77b930f982a54ad487d3de5523ce641db9dcc9
-  FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
-  FirebaseStorage: 3d22c041370593e639fba013d1eb698a8dae2881
   GoogleAPIClientForREST: 825503f12cb5824601cf526cf06d81a1cea4afd9
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleMobileVision: a1f93108b3527d67339e2de80e1db76645f9e8b9
-  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
-  "gRPC-C++": 19eec1ffd34de29453f5fab5b4697ad0f240ad51
-  gRPC-Core: f4836515817c0eb479aeeb9cc27c91c4ba62a9f6
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d9ecbdf3dd3f3b9ea2e70cf0d31931d96bab902c
+PODFILE CHECKSUM: 018bbc63fe2b94e3c19d8b504a33956bd9cd4cee
 
 COCOAPODS: 1.5.3

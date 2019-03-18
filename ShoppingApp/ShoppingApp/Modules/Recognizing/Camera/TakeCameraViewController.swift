@@ -9,11 +9,17 @@
 import UIKit
 import Photos
 import BHPhotoView
+import FirebaseMLVision
+
+protocol TakePhotoDelegate: AnyObject {
+    func pass(_ photo: UIImage)
+    func fail()
+}
 
 class TakeCameraViewController: BaseViewController {
     @IBOutlet weak var cameraView: BHPhotoView!
     weak var delegate: TakePhotoDelegate?
-
+    var recognizeType : RecognizeType = .text
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +28,9 @@ class TakeCameraViewController: BaseViewController {
         self.setUpNavigationBar()
 
         self.cameraView.delegate = self
-        self.cameraView.cameraPosition = .back
-        //        self.photoView.previewOrientation = AVCaptureVideoOrientation.landscapeLeft
+        self.cameraView.cameraPosition = .front
+//        self.cameraView.previewOrientation = AVCaptureVideoOrientation.landscapeLeft
         self.cameraView.start()
-
     }
     
     @IBAction func startTake(_ sender: Any) {
@@ -60,7 +65,3 @@ extension TakeCameraViewController: BHPhotoViewDelegate {
     }
 }
 
-protocol TakePhotoDelegate: AnyObject {
-    func pass(_ photo: UIImage)
-    func fail()
-}
